@@ -1,0 +1,16 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+data/raw/
+data/processed/
+models/*.pkl
+models/*.joblib
+.vscode/
+*.log
+debug.log
+.DS_Store
+Thumbs.db
