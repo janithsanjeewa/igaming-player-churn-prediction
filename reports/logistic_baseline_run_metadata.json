@@ -1,0 +1,23 @@
+{
+  "python_version": "3.13.2",
+  "pandas_version": "3.0.6",
+  "numpy_version": "2.5.3",
+  "sklearn_version": "1.9.1",
+  "training_snapshots": [
+    "2005-03-31",
+    "2005-12-31"
+  ],
+  "validation_snapshots": [
+    "2006-03-31",
+    "2006-05-31"
+  ],
+  "training_observations": 10380,
+  "validation_observations": 2184,
+  "test_predictions_generated": false,
+  "default_model": "logistic_unweighted",
+  "random_state": 42,
+  "max_iter": 5000,
+  "ranking_rounding": "ceil(n * fraction)",
+  "ranking_ties": "stable input order",
+  "final_operational_threshold_selected": false
+}
