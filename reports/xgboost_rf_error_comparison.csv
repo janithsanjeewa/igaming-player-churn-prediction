@@ -1,0 +1,9 @@
+model,outcome,days_since_last_active_bet,active_days_30d,bets_30d,stake_30d,bets_change_pct_15d,active_days_change_15d,observations
+Random Forest,TP,20.0,1.0,4.0,20.0,-100.0,-1.0,261
+Random Forest,FP,19.0,1.0,4.0,20.5,-100.0,-1.0,164
+Random Forest,TN,3.0,4.0,100.0,993.1,-52.13257135477205,0.0,1247
+Random Forest,FN,10.0,2.0,44.0,197.0,-100.0,0.0,512
+XGBoost,TP,20.0,1.0,5.5,28.5,-100.0,-1.0,312
+XGBoost,FP,19.0,1.0,5.0,31.9,-100.0,-1.0,203
+XGBoost,TN,3.0,4.0,106.0,1054.5,-48.24561403508772,0.0,1208
+XGBoost,FN,9.0,2.0,46.0,231.34,-100.0,0.0,461

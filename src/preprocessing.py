@@ -61,7 +61,7 @@ def predictor_frame(frame: pd.DataFrame) -> pd.DataFrame:
     return result
 
 
-def build_preprocessing(*, scale_numeric: bool) -> ColumnTransformer:
+def build_preprocessing(*, scale_numeric: bool, sparse_threshold: float = 0.3) -> ColumnTransformer:
     """Share feature types and imputation; fit only inside the training pipeline."""
     steps = [('imputer', SimpleImputer(strategy='median', add_indicator=True))]
     if scale_numeric:
@@ -74,7 +74,7 @@ def build_preprocessing(*, scale_numeric: bool) -> ColumnTransformer:
     return ColumnTransformer([
         ('numeric', numeric, NUMERIC_COLUMNS),
         ('categorical', categorical, CATEGORICAL_COLUMNS),
-    ], remainder='drop')
+    ], remainder='drop', sparse_threshold=sparse_threshold)
 
 
 def build_logistic_pipeline(*, class_weight: str | None = None) -> Pipeline:
@@ -95,4 +95,22 @@ def build_random_forest_pipeline(*, n_estimators=500, max_depth=None,
             n_estimators=n_estimators, max_depth=max_depth,
             min_samples_leaf=min_samples_leaf, max_features=max_features,
             class_weight=class_weight, random_state=42, n_jobs=-1)),
+    ])
+
+
+def build_xgboost_pipeline(**parameters) -> Pipeline:
+    """Train-only unscaled preprocessing and reproducible histogram boosting.
+
+    Dense output preserves legitimate numeric zeros: XGBoost treats implicit
+    sparse entries as missing. No class reweighting or early stopping is used.
+    """
+    from xgboost import XGBClassifier
+
+    settings = dict(objective='binary:logistic', eval_metric='logloss',
+                    tree_method='hist', random_state=42, n_jobs=-1,
+                    importance_type='gain')
+    settings.update(parameters)
+    return Pipeline([
+        ('preprocessing', build_preprocessing(scale_numeric=False, sparse_threshold=0)),
+        ('model', XGBClassifier(**settings)),
     ])
