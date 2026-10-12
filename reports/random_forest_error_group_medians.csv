@@ -1,0 +1,5 @@
+outcome,days_since_last_active_bet,active_days_30d,bets_30d,stake_30d,bets_change_pct_15d,active_days_change_15d,observations
+TP,20.0,1.0,4.0,20.0,-100.0,-1.0,261
+FP,19.0,1.0,4.0,20.5,-100.0,-1.0,164
+TN,3.0,4.0,100.0,993.1,-52.132571354772054,0.0,1247
+FN,10.0,2.0,44.0,197.0,-100.0,0.0,512

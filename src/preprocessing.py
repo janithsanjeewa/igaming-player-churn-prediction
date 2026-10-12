@@ -1,9 +1,10 @@
-"""Fixed temporal split and train-fitted logistic baseline pipeline."""
+"""Fixed temporal split and train-fitted model preprocessing pipelines."""
 from __future__ import annotations
 
 import numpy as np
 import pandas as pd
 from sklearn.compose import ColumnTransformer
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
@@ -60,21 +61,38 @@ def predictor_frame(frame: pd.DataFrame) -> pd.DataFrame:
     return result
 
 
-def build_logistic_pipeline(*, class_weight: str | None = None) -> Pipeline:
-    """Return a fresh, unfitted pipeline; caller must fit on TRAIN only."""
-    numeric = Pipeline([
-        ('imputer', SimpleImputer(strategy='median', add_indicator=True)),
-        ('scaler', StandardScaler()),
-    ])
+def build_preprocessing(*, scale_numeric: bool) -> ColumnTransformer:
+    """Share feature types and imputation; fit only inside the training pipeline."""
+    steps = [('imputer', SimpleImputer(strategy='median', add_indicator=True))]
+    if scale_numeric:
+        steps.append(('scaler', StandardScaler()))
+    numeric = Pipeline(steps)
     categorical = Pipeline([
         ('imputer', SimpleImputer(strategy='most_frequent')),
         ('encoder', OneHotEncoder(handle_unknown='ignore')),
     ])
-    preprocessing = ColumnTransformer([
+    return ColumnTransformer([
         ('numeric', numeric, NUMERIC_COLUMNS),
         ('categorical', categorical, CATEGORICAL_COLUMNS),
     ], remainder='drop')
+
+
+def build_logistic_pipeline(*, class_weight: str | None = None) -> Pipeline:
+    """Return a fresh, unfitted pipeline; caller must fit on TRAIN only."""
     return Pipeline([
-        ('preprocessing', preprocessing),
+        ('preprocessing', build_preprocessing(scale_numeric=True)),
         ('model', LogisticRegression(max_iter=5000, random_state=42, class_weight=class_weight)),
+    ])
+
+
+def build_random_forest_pipeline(*, n_estimators=500, max_depth=None,
+                                min_samples_leaf=1, max_features='sqrt',
+                                class_weight=None) -> Pipeline:
+    """Unscaled median/indicator and categorical pipeline, with fixed RF seed."""
+    return Pipeline([
+        ('preprocessing', build_preprocessing(scale_numeric=False)),
+        ('model', RandomForestClassifier(
+            n_estimators=n_estimators, max_depth=max_depth,
+            min_samples_leaf=min_samples_leaf, max_features=max_features,
+            class_weight=class_weight, random_state=42, n_jobs=-1)),
     ])

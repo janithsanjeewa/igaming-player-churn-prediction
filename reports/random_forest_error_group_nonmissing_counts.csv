@@ -1,0 +1,5 @@
+outcome,days_since_last_active_bet,active_days_30d,bets_30d,stake_30d,bets_change_pct_15d,active_days_change_15d
+TP,261,261,261,261,204,261
+FP,164,164,164,164,120,164
+TN,1247,1247,1247,1247,922,1247
+FN,512,512,512,512,329,512
