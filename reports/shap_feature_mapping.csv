@@ -1,0 +1,113 @@
+position,transformed_feature,feature,source_feature,feature_group
+0,numeric__active_days_30d,active_days_30d,active_days_30d,activity
+1,numeric__bets_30d,bets_30d,bets_30d,betting volume
+2,numeric__active_days_14d,active_days_14d,active_days_14d,activity
+3,numeric__bets_14d,bets_14d,bets_14d,betting volume
+4,numeric__active_days_7d,active_days_7d,active_days_7d,activity
+5,numeric__bets_7d,bets_7d,bets_7d,betting volume
+6,numeric__avg_bets_per_active_day_30d,avg_bets_per_active_day_30d,avg_bets_per_active_day_30d,betting volume
+7,numeric__avg_bets_per_active_day_7d,avg_bets_per_active_day_7d,avg_bets_per_active_day_7d,betting volume
+8,numeric__days_since_last_active_bet,days_since_last_active_bet,days_since_last_active_bet,recency
+9,numeric__max_gap_between_active_days_30d,max_gap_between_active_days_30d,max_gap_between_active_days_30d,activity
+10,numeric__mean_gap_between_active_days_30d,mean_gap_between_active_days_30d,mean_gap_between_active_days_30d,activity
+11,numeric__stake_30d,stake_30d,stake_30d,monetary
+12,numeric__stake_14d,stake_14d,stake_14d,monetary
+13,numeric__stake_7d,stake_7d,stake_7d,monetary
+14,numeric__winnings_30d,winnings_30d,winnings_30d,monetary
+15,numeric__winnings_14d,winnings_14d,winnings_14d,monetary
+16,numeric__winnings_7d,winnings_7d,winnings_7d,monetary
+17,numeric__net_loss_30d,net_loss_30d,net_loss_30d,monetary
+18,numeric__net_loss_7d,net_loss_7d,net_loss_7d,monetary
+19,numeric__avg_stake_per_bet_30d,avg_stake_per_bet_30d,avg_stake_per_bet_30d,monetary
+20,numeric__avg_stake_per_active_day_30d,avg_stake_per_active_day_30d,avg_stake_per_active_day_30d,monetary
+21,numeric__max_daily_stake_30d,max_daily_stake_30d,max_daily_stake_30d,monetary
+22,numeric__median_daily_stake_30d,median_daily_stake_30d,median_daily_stake_30d,monetary
+23,numeric__std_daily_stake_30d,std_daily_stake_30d,std_daily_stake_30d,monetary
+24,numeric__active_days_7d_share,active_days_7d_share,active_days_7d_share,trend
+25,numeric__bets_7d_share,bets_7d_share,bets_7d_share,trend
+26,numeric__stake_7d_share,stake_7d_share,stake_7d_share,trend
+27,numeric__bets_recent15,bets_recent15,bets_recent15,trend
+28,numeric__bets_early15,bets_early15,bets_early15,trend
+29,numeric__bets_change_15d,bets_change_15d,bets_change_15d,trend
+30,numeric__bets_change_pct_15d,bets_change_pct_15d,bets_change_pct_15d,trend
+31,numeric__stake_recent15,stake_recent15,stake_recent15,trend
+32,numeric__stake_early15,stake_early15,stake_early15,trend
+33,numeric__stake_change_15d,stake_change_15d,stake_change_15d,trend
+34,numeric__stake_change_pct_15d,stake_change_pct_15d,stake_change_pct_15d,trend
+35,numeric__active_days_recent15,active_days_recent15,active_days_recent15,trend
+36,numeric__active_days_early15,active_days_early15,active_days_early15,trend
+37,numeric__active_days_change_15d,active_days_change_15d,active_days_change_15d,trend
+38,numeric__active_days_change_pct_15d,active_days_change_pct_15d,active_days_change_pct_15d,trend
+39,numeric__days_since_registration,days_since_registration,days_since_registration,lifecycle
+40,numeric__days_since_first_pay,days_since_first_pay,days_since_first_pay,lifecycle
+41,numeric__days_since_first_casino_activity,days_since_first_casino_activity,days_since_first_casino_activity,lifecycle
+42,numeric__missingindicator_avg_bets_per_active_day_7d,avg_bets_per_active_day_7d (missing),avg_bets_per_active_day_7d,missingness
+43,numeric__missingindicator_max_gap_between_active_days_30d,max_gap_between_active_days_30d (missing),max_gap_between_active_days_30d,missingness
+44,numeric__missingindicator_mean_gap_between_active_days_30d,mean_gap_between_active_days_30d (missing),mean_gap_between_active_days_30d,missingness
+45,numeric__missingindicator_stake_7d_share,stake_7d_share (missing),stake_7d_share,missingness
+46,numeric__missingindicator_bets_change_pct_15d,bets_change_pct_15d (missing),bets_change_pct_15d,missingness
+47,numeric__missingindicator_stake_change_pct_15d,stake_change_pct_15d (missing),stake_change_pct_15d,missingness
+48,numeric__missingindicator_active_days_change_pct_15d,active_days_change_pct_15d (missing),active_days_change_pct_15d,missingness
+49,numeric__missingindicator_days_since_first_casino_activity,days_since_first_casino_activity (missing),days_since_first_casino_activity,missingness
+50,categorical__Country_20,Country = 20,Country,demographics
+51,categorical__Country_32,Country = 32,Country,demographics
+52,categorical__Country_36,Country = 36,Country,demographics
+53,categorical__Country_40,Country = 40,Country,demographics
+54,categorical__Country_56,Country = 56,Country,demographics
+55,categorical__Country_70,Country = 70,Country,demographics
+56,categorical__Country_124,Country = 124,Country,demographics
+57,categorical__Country_158,Country = 158,Country,demographics
+58,categorical__Country_191,Country = 191,Country,demographics
+59,categorical__Country_196,Country = 196,Country,demographics
+60,categorical__Country_203,Country = 203,Country,demographics
+61,categorical__Country_208,Country = 208,Country,demographics
+62,categorical__Country_233,Country = 233,Country,demographics
+63,categorical__Country_234,Country = 234,Country,demographics
+64,categorical__Country_246,Country = 246,Country,demographics
+65,categorical__Country_250,Country = 250,Country,demographics
+66,categorical__Country_276,Country = 276,Country,demographics
+67,categorical__Country_300,Country = 300,Country,demographics
+68,categorical__Country_304,Country = 304,Country,demographics
+69,categorical__Country_348,Country = 348,Country,demographics
+70,categorical__Country_352,Country = 352,Country,demographics
+71,categorical__Country_376,Country = 376,Country,demographics
+72,categorical__Country_380,Country = 380,Country,demographics
+73,categorical__Country_428,Country = 428,Country,demographics
+74,categorical__Country_438,Country = 438,Country,demographics
+75,categorical__Country_440,Country = 440,Country,demographics
+76,categorical__Country_442,Country = 442,Country,demographics
+77,categorical__Country_470,Country = 470,Country,demographics
+78,categorical__Country_578,Country = 578,Country,demographics
+79,categorical__Country_616,Country = 616,Country,demographics
+80,categorical__Country_620,Country = 620,Country,demographics
+81,categorical__Country_703,Country = 703,Country,demographics
+82,categorical__Country_705,Country = 705,Country,demographics
+83,categorical__Country_710,Country = 710,Country,demographics
+84,categorical__Country_724,Country = 724,Country,demographics
+85,categorical__Country_752,Country = 752,Country,demographics
+86,categorical__Country_756,Country = 756,Country,demographics
+87,categorical__Country_760,Country = 760,Country,demographics
+88,categorical__Country_784,Country = 784,Country,demographics
+89,categorical__Country_792,Country = 792,Country,demographics
+90,categorical__Country_826,Country = 826,Country,demographics
+91,categorical__Country_891,Country = 891,Country,demographics
+92,categorical__Language_1,Language = 1,Language,demographics
+93,categorical__Language_2,Language = 2,Language,demographics
+94,categorical__Language_3,Language = 3,Language,demographics
+95,categorical__Language_4,Language = 4,Language,demographics
+96,categorical__Language_5,Language = 5,Language,demographics
+97,categorical__Language_6,Language = 6,Language,demographics
+98,categorical__Language_7,Language = 7,Language,demographics
+99,categorical__Language_8,Language = 8,Language,demographics
+100,categorical__Language_9,Language = 9,Language,demographics
+101,categorical__Language_10,Language = 10,Language,demographics
+102,categorical__Language_11,Language = 11,Language,demographics
+103,categorical__Language_12,Language = 12,Language,demographics
+104,categorical__Language_13,Language = 13,Language,demographics
+105,categorical__Language_14,Language = 14,Language,demographics
+106,categorical__Language_16,Language = 16,Language,demographics
+107,categorical__Language_18,Language = 18,Language,demographics
+108,categorical__Language_19,Language = 19,Language,demographics
+109,categorical__Language_20,Language = 20,Language,demographics
+110,categorical__Gender_0,Gender = 0,Gender,demographics
+111,categorical__Gender_1,Gender = 1,Gender,demographics

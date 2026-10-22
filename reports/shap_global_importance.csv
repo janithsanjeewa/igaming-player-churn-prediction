@@ -1,0 +1,113 @@
+feature,mean_abs_shap,feature_group
+days_since_last_active_bet,0.34433606,recency
+days_since_first_casino_activity,0.24461165,lifecycle
+winnings_7d,0.21386011,monetary
+active_days_30d,0.19787474,activity
+net_loss_30d,0.10193758,monetary
+net_loss_7d,0.06976134,monetary
+winnings_14d,0.0631802,monetary
+days_since_first_pay,0.060941335,lifecycle
+active_days_recent15,0.05935219,trend
+active_days_early15,0.052223016,trend
+mean_gap_between_active_days_30d,0.050138455,activity
+bets_30d,0.041320764,betting volume
+winnings_30d,0.037649773,monetary
+Language = 2,0.0367236,demographics
+stake_recent15,0.03619231,trend
+max_daily_stake_30d,0.03184694,monetary
+avg_bets_per_active_day_30d,0.031144796,betting volume
+active_days_7d_share,0.03031404,trend
+avg_bets_per_active_day_7d,0.026663624,betting volume
+days_since_registration,0.025936497,lifecycle
+active_days_7d,0.025872428,activity
+active_days_change_pct_15d,0.022059077,trend
+stake_30d,0.01890135,monetary
+std_daily_stake_30d,0.018111516,monetary
+stake_change_15d,0.017925905,trend
+active_days_14d,0.017472088,activity
+Country = 792,0.01716937,demographics
+avg_stake_per_bet_30d,0.016394537,monetary
+Country = 250,0.016013578,demographics
+bets_early15,0.015753163,trend
+bets_change_pct_15d,0.013972595,trend
+bets_change_15d,0.012960969,trend
+bets_14d,0.011742518,betting volume
+max_gap_between_active_days_30d,0.009908362,activity
+stake_7d,0.009479559,monetary
+stake_early15,0.009306073,trend
+stake_14d,0.009072839,monetary
+bets_7d,0.008799069,betting volume
+Language = 3,0.008680718,demographics
+avg_stake_per_active_day_30d,0.008377708,monetary
+bets_recent15,0.0081328545,trend
+bets_7d_share,0.007912418,trend
+Language = 11,0.007553402,demographics
+Country = 40,0.007122474,demographics
+Language = 4,0.006630398,demographics
+Language = 8,0.006259108,demographics
+Country = 380,0.0055565108,demographics
+stake_change_pct_15d,0.0053011025,trend
+Country = 276,0.0052091423,demographics
+active_days_change_15d,0.0041236784,trend
+max_gap_between_active_days_30d (missing),0.003026057,missingness
+stake_7d_share,0.0027768116,trend
+Country = 300,0.0017699208,demographics
+Gender = 0,0.0009764692,demographics
+median_daily_stake_30d,0.0007269503,monetary
+Language = 7,0.00056040194,demographics
+Country = 724,0.00029467608,demographics
+Country = 578,0.0002713207,demographics
+Country = 208,0.00022033716,demographics
+Language = 6,0.00015467445,demographics
+avg_bets_per_active_day_7d (missing),0.0,missingness
+bets_change_pct_15d (missing),0.0,missingness
+stake_7d_share (missing),0.0,missingness
+mean_gap_between_active_days_30d (missing),0.0,missingness
+stake_change_pct_15d (missing),0.0,missingness
+Country = 233,0.0,demographics
+Country = 234,0.0,demographics
+Country = 196,0.0,demographics
+Country = 158,0.0,demographics
+Country = 348,0.0,demographics
+Country = 203,0.0,demographics
+Country = 20,0.0,demographics
+Country = 70,0.0,demographics
+Country = 124,0.0,demographics
+Country = 191,0.0,demographics
+active_days_change_pct_15d (missing),0.0,missingness
+Country = 32,0.0,demographics
+Country = 36,0.0,demographics
+Country = 56,0.0,demographics
+days_since_first_casino_activity (missing),0.0,missingness
+Country = 616,0.0,demographics
+Country = 470,0.0,demographics
+Country = 442,0.0,demographics
+Country = 440,0.0,demographics
+Country = 428,0.0,demographics
+Country = 438,0.0,demographics
+Country = 352,0.0,demographics
+Country = 376,0.0,demographics
+Country = 246,0.0,demographics
+Country = 304,0.0,demographics
+Country = 752,0.0,demographics
+Country = 756,0.0,demographics
+Country = 760,0.0,demographics
+Country = 620,0.0,demographics
+Country = 705,0.0,demographics
+Country = 703,0.0,demographics
+Language = 1,0.0,demographics
+Country = 784,0.0,demographics
+Country = 826,0.0,demographics
+Country = 891,0.0,demographics
+Country = 710,0.0,demographics
+Language = 5,0.0,demographics
+Language = 10,0.0,demographics
+Language = 9,0.0,demographics
+Language = 12,0.0,demographics
+Language = 13,0.0,demographics
+Language = 16,0.0,demographics
+Language = 14,0.0,demographics
+Language = 18,0.0,demographics
+Language = 19,0.0,demographics
+Language = 20,0.0,demographics
+Gender = 1,0.0,demographics

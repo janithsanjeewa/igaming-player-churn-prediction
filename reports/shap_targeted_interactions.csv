@@ -1,0 +1,5 @@
+feature_1,feature_2,first_low,first_high,second_low,second_high,mean_mixed_margin,mean_abs_mixed_margin,fraction_nonzero,n
+days_since_last_active_bet,active_days_30d,2.0,18.0,1.0,6.0,0.2877437174320221,0.2877437174320221,1.0,1000
+days_since_last_active_bet,bets_30d,2.0,18.0,10.0,297.25,-1.0611140410787812e-08,1.2840249041801144e-07,0.0,1000
+active_days_30d,days_since_first_casino_activity,1.0,6.0,218.0,432.5,-0.021588167175650597,0.021991165354847908,1.0,1000
+winnings_7d,active_days_30d,0.0,171.146525,1.0,6.0,-0.10705950856208801,0.10734571516513824,1.0,1000

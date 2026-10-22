@@ -1,0 +1,26 @@
+{
+  "model_sha256": "2a0f02aef120c59b2386b3620b7b3147dcb2252cbda698045b266fe70e39ed3f",
+  "data_sha256": "a7a1febbc70c31f54eed3fdc2357df10544907a1b02fc961d9a26f886ccd5ccf",
+  "validation_rows": 2184,
+  "sample_rows": 1000,
+  "transformed_columns": 112,
+  "random_state": 42,
+  "sampling": "uniform validation rows without replacement",
+  "validation_metrics": {
+    "roc_auc": 0.7463819206511763,
+    "average_precision": 0.5630157619405415
+  },
+  "python": "3.13.2",
+  "shap": "0.52.0",
+  "xgboost": "3.4.1",
+  "feature_perturbation": "tree_path_dependent",
+  "model_output": "raw log-odds",
+  "external_background": false,
+  "additivity_checked": true,
+  "diagnostic_threshold": 0.5,
+  "final_threshold_selected": false,
+  "test_predictions_generated": false,
+  "test_shap_computed": false,
+  "model_refitted": false,
+  "calibrated": false
+}

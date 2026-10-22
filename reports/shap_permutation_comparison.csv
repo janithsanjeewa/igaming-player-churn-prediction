@@ -1,0 +1,46 @@
+feature,mean_abs_shap,shap_rank,mean_ap_drop,std_ap_drop,permutation_rank,notes
+days_since_last_active_bet,0.34433615,1,0.0336561369484823,0.0030907645190602,1,Both top 10
+days_since_first_casino_activity,0.24461158,2,0.0104345469998423,0.0019246234430677,4,Both top 10
+winnings_7d,0.21386017,3,0.0122546153032744,0.0043134510018871,2,Both top 10
+active_days_30d,0.19787458,4,0.0111944289831841,0.0061040946705742,3,Both top 10
+net_loss_30d,0.10193759,5,0.0016412950822956,0.0032112111044939,15,Different attribution/AP disruption; correlated features may redistribute importance
+net_loss_7d,0.06976131,6,-0.0026945565681844,0.0012335348511939,45,Different attribution/AP disruption; correlated features may redistribute importance
+winnings_14d,0.0631802,7,0.0009101982403382,0.0029049549517483,22,Different attribution/AP disruption; correlated features may redistribute importance
+days_since_first_pay,0.06094135,8,0.0042295879492092,0.0016835854891306,6,Both top 10
+active_days_recent15,0.059352197,9,0.003097209140689,0.0031606129556696,8,Both top 10
+active_days_early15,0.052223016,10,0.0023215620909296,0.0020068843317614,13,Ranks within 5 positions
+mean_gap_between_active_days_30d,0.050138466,11,0.0027729914129222,0.0017373014531968,10,Ranks within 5 positions
+Language,0.044815443,12,0.0002041540020715,0.0004849803634592,32,Different attribution/AP disruption; correlated features may redistribute importance
+bets_30d,0.041320767,13,0.0007230336391985,0.0028319293413228,25,Different attribution/AP disruption; correlated features may redistribute importance
+winnings_30d,0.037649784,14,0.0014395728393062,0.0014653851626166,16,Ranks within 5 positions
+stake_recent15,0.036192324,15,0.0025268930343391,0.0024523097925364,11,Ranks within 5 positions
+Country,0.03264807,16,0.0018501356270268,0.0021461367038185,14,Ranks within 5 positions
+max_daily_stake_30d,0.03184695,17,0.0050458646209756,0.0011915003464139,5,Different attribution/AP disruption; correlated features may redistribute importance
+avg_bets_per_active_day_30d,0.0311448,18,-0.0009505040726232,0.0026283205662827,44,Different attribution/AP disruption; correlated features may redistribute importance
+active_days_7d_share,0.030314043,19,0.0002317715984794,0.0015410886903704,31,Different attribution/AP disruption; correlated features may redistribute importance
+avg_bets_per_active_day_7d,0.026663646,20,0.0010109096917864,0.0002987196634975,20,Ranks within 5 positions
+days_since_registration,0.025936509,21,0.0,0.0,38,Different attribution/AP disruption; correlated features may redistribute importance
+active_days_7d,0.02587244,22,0.0005374428898301,0.0017175707256655,26,Ranks within 5 positions
+active_days_change_pct_15d,0.02205906,23,0.0011053204910164,0.0007893127057324,19,Ranks within 5 positions
+stake_30d,0.018901352,24,0.0028098229757066,0.0023004093167267,9,Different attribution/AP disruption; correlated features may redistribute importance
+std_daily_stake_30d,0.018111516,25,0.0035567812600476,0.0013503639827469,7,Different attribution/AP disruption; correlated features may redistribute importance
+stake_change_15d,0.017925905,26,0.0009245885066747,0.0007981420169607,21,Ranks within 5 positions
+active_days_14d,0.01747208,27,0.0007496777275015,0.0008471747271277,24,Ranks within 5 positions
+avg_stake_per_bet_30d,0.016394537,28,0.0023959121508371,0.0014052376395459,12,Different attribution/AP disruption; correlated features may redistribute importance
+bets_early15,0.015753152,29,0.0013639502921025,0.0016939616339811,17,Different attribution/AP disruption; correlated features may redistribute importance
+bets_change_pct_15d,0.01397259,30,0.0002869165365005,0.0010115790008995,29,Ranks within 5 positions
+bets_change_15d,0.012960966,31,0.0005004273859164,0.0006730356767238,27,Ranks within 5 positions
+bets_14d,0.011742527,32,0.0007610496212135,0.0006245457741069,23,Different attribution/AP disruption; correlated features may redistribute importance
+max_gap_between_active_days_30d,0.011715147,33,0.0001248851443429,0.0012171137470015,36,Ranks within 5 positions
+stake_7d,0.009479556,34,-0.0001313840427861,0.0008158121394396,41,Different attribution/AP disruption; correlated features may redistribute importance
+stake_early15,0.009306085,35,0.0004504753441882,0.0005038050280264,28,Different attribution/AP disruption; correlated features may redistribute importance
+stake_14d,0.009072846,36,0.0001303925884371,0.0003412200476225,35,Ranks within 5 positions
+bets_7d,0.008799065,37,-0.0004566021163482,0.0005151268873072,43,Different attribution/AP disruption; correlated features may redistribute importance
+avg_stake_per_active_day_30d,0.008377705,38,0.0011594316455158,0.0014534233465255,18,Different attribution/AP disruption; correlated features may redistribute importance
+bets_recent15,0.008132851,39,-0.0002992183067757,0.0003989386621018,42,Ranks within 5 positions
+bets_7d_share,0.007912419,40,0.0002352922494192,0.0005267606800963,30,Different attribution/AP disruption; correlated features may redistribute importance
+stake_change_pct_15d,0.0053011044,41,0.0001882264063476,0.0002853420200527,33,Different attribution/AP disruption; correlated features may redistribute importance
+active_days_change_15d,0.004123679,42,0.0001458493348305,0.000466454378461,34,Different attribution/AP disruption; correlated features may redistribute importance
+stake_7d_share,0.0027768193,43,-0.0001161766550621,0.0003430010395804,40,Ranks within 5 positions
+Gender,0.00097646815,44,1.1676853397557527e-05,0.0001315759327413,37,Different attribution/AP disruption; correlated features may redistribute importance
+median_daily_stake_30d,0.00072694756,45,-2.2783004763682337e-05,0.0001143756513605,39,Different attribution/AP disruption; correlated features may redistribute importance
