@@ -1,0 +1,6 @@
+snapshot_date,outcome_end,safe_for_future_refit
+2006-01-31,2006-04-01,True
+2006-02-28,2006-04-29,True
+2006-05-31,2006-07-30,True
+2006-06-30,2006-08-29,False
+2006-07-31,2006-09-29,False

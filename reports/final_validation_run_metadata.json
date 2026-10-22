@@ -1,0 +1,38 @@
+{
+  "data_sha256": "a7a1febbc70c31f54eed3fdc2357df10544907a1b02fc961d9a26f886ccd5ccf",
+  "original_model_hashes": {
+    "random_forest.joblib": "38e743ca6d13c9c2e2f62e6b32b46cd16de9ebb3ad019e86c989039466e2bc6f",
+    "xgboost_model.joblib": "2a0f02aef120c59b2386b3620b7b3147dcb2252cbda698045b266fe70e39ed3f"
+  },
+  "final_development_model_sha256": "51eea0e9a73e19fca16fadf1dadda016c19552566b3425355d219463561e2271",
+  "final_development_calibration_sha256": "815b8466707f1583a4ba905163a93a9ee14ae40986795a0803dbc54bddc4d1bc",
+  "bootstrap_replicates": 1000,
+  "random_state": 42,
+  "original_train_observations": 10380,
+  "validation_observations": 2184,
+  "oof_support": {
+    "observations": 4544,
+    "unique_players": 2108,
+    "churn_rate": 0.3435299295774648,
+    "folds": 5
+  },
+  "ablation_loss_tolerances": {
+    "roc_auc": 0.005,
+    "average_precision": 0.005,
+    "brier_score": 0.002,
+    "lift_at_top10pct": 0.05,
+    "recall_at_top10pct": 0.01,
+    "lift_at_top20pct": 0.05,
+    "recall_at_top20pct": 0.01
+  },
+  "final_family": "XGBoost",
+  "demographics_retained": false,
+  "calibration": "raw",
+  "diagnostic_threshold": 0.5,
+  "validation_decisions_frozen": true,
+  "test_predictions_generated": false,
+  "test_probabilities_inspected": false,
+  "test_evaluated": false,
+  "pretest_refit_executed": false,
+  "player_level_predictions_exported": false
+}
